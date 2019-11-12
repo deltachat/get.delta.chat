@@ -2,24 +2,25 @@ html {
     --border-color: rgb(97, 97, 97);
 }
 
-html,body {
-  padding: 0;
-  margin: 0;  
+html,
+body {
+    padding: 0;
+    margin: 0;
 }
 
-header {
+.header {
     background-image: linear-gradient(120deg, #77888f, #364e59);
     display: block;
     padding: 6pt;
 }
 
-header > content {
+.header>.content {
     display: flex;
     align-items: center;
     max-width: 790px;
 }
 
-header > content > a {
+.header>.content>a {
     text-decoration: none;
     font-size: 25px;
     color: white;
@@ -27,12 +28,12 @@ header > content > a {
     line-height: 32px;
 }
 
-header >content > img {
+.header>.content>img {
     height: 32px;
     margin-right: 2px;
 }
 
-content {
+.content {
     display: block;
     max-width: 800px;
     margin: 0 auto;
@@ -46,7 +47,7 @@ content {
     padding: 0 0 5pt 5pt;
 }
 
-.box > .source-link {
+.box>.source-link {
     font-size: 13px;
     float: right;
 
@@ -58,37 +59,37 @@ content {
     border-right: none;
 }
 
-.box > .source-link:hover {
-    background-color: rgba(0,0,0,0.1);
+.box>.source-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
     color: black;
 }
 
-.box > .title {
+.box>.title {
     font-size: 20px;
     margin-top: 5pt;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.box > .buttons {
+.box>.buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.box > .buttons > a {
+.box>.buttons>a {
     background-color: purple;
     color: white;
     font-weight: bold;
     padding: 5px;
-    margin:3px;
+    margin: 3px;
     text-decoration: none;
     font-size: 18px;
     height: max-content;
 }
 
-.box > .buttons > a.soon {
+.box>.buttons>a.soon {
     color: orange;
     cursor: not-allowed;
 }
