@@ -50,11 +50,10 @@ body {
 .box>.source-link {
     font-size: 13px;
     float: right;
-
     text-decoration: none;
     padding: 2pt 2pt 2pt 3pt;
     border-radius: 0 0 0 10px;
-    border: 2pt solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-top: none;
     border-right: none;
 }
@@ -102,8 +101,10 @@ small {
 code {
     background-color: rgb(229, 229, 229);
     color: black;
-    padding: 3pt;
+    padding: 5px 8px;
     display: inline-block;
+    position: relative;
+    user-select: all;
 }
 
 
