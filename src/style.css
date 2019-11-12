@@ -17,7 +17,8 @@ body {
 .header>.content {
     display: flex;
     align-items: center;
-    max-width: 790px;
+    flex-wrap: wrap;
+    max-width: 690px;
 }
 
 .header>.content>a {
@@ -35,7 +36,7 @@ body {
 
 .content {
     display: block;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 4pt;
 }
@@ -45,6 +46,7 @@ body {
     border: 2px solid var(--border-color);
     margin: 10pt 5pt;
     padding: 0 0 5pt 5pt;
+    background-color: rgb(249, 249, 249);
 }
 
 .box>.source-link {
