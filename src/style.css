@@ -1,0 +1,111 @@
+html {
+    --border-color: rgb(97, 97, 97);
+}
+
+html,body {
+  padding: 0;
+  margin: 0;  
+}
+
+header {
+    background-image: linear-gradient(120deg, #77888f, #364e59);
+    display: block;
+    padding: 6pt;
+}
+
+header > content {
+    display: flex;
+    align-items: center;
+    max-width: 790px;
+}
+
+header > content > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    line-height: 32px;
+}
+
+header >content > img {
+    height: 32px;
+    margin-right: 2px;
+}
+
+content {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 4pt;
+}
+
+
+.box {
+    border: 2px solid var(--border-color);
+    margin: 10pt 5pt;
+    padding: 0 0 5pt 5pt;
+}
+
+.box > .source-link {
+    font-size: 13px;
+    float: right;
+
+    text-decoration: none;
+    padding: 2pt 2pt 2pt 3pt;
+    border-radius: 0 0 0 10px;
+    border: 2pt solid var(--border-color);
+    border-top: none;
+    border-right: none;
+}
+
+.box > .source-link:hover {
+    background-color: rgba(0,0,0,0.1);
+    color: black;
+}
+
+.box > .title {
+    font-size: 20px;
+    margin-top: 5pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.box > .buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box > .buttons > a {
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin:3px;
+    text-decoration: none;
+    font-size: 18px;
+    height: max-content;
+}
+
+.box > .buttons > a.soon {
+    color: orange;
+    cursor: not-allowed;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+}
+
+code {
+    background-color: rgb(229, 229, 229);
+    color: black;
+    padding: 3pt;
+    display: inline-block;
+}
+
+
+/* .soon {
+    display: none;
+} */

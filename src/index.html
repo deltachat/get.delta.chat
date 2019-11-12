@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Delta Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <header>
+        <content>
+            <img src="https://delta.chat/assets/logos/delta-chat.svg" />
+            <a href="https://delta.chat">
+                Delta.chat
+            </a>
+            <a href="https://support.delta.chat/">Forum</a>
+        </content>
+    </header>
+    <content>
+        <h4>Recomended based on your User Agent:</h4>
+        <div id="recommend">
+            
+        </div>
+        <h4>Other platforms:</h4>
+        <div id="boxes">
+            <div class="box" id="linux">
+                <a href="https://github.com/deltachat/deltachat-desktop" class="source-link">Source Code</a>
+                <div class="title">GNU+Linux</div>
+                <div class="buttons">
+                    <a href="">Debian (.deb)</a>
+                    <a href="">Universal (.AppImage)</a>
+                </div>
+                <h4>Download via Package Manager</h4>
+                <p>
+                    Arch <a href="https://aur.archlinux.org/packages/deltachat-desktop-git/">(aur)</a>:
+                    <code>yay -S deltachat-desktop-git</code>
+                </p>
+                <p>
+                    <a href="https://flathub.org/apps/details/chat.delta.desktop">Flatpack</a> (outdated):
+                    <code>flatpak install flathub chat.delta.desktop</code>
+                </p>
+            </div>
+            <div class="box" id="windows">
+                <a href="https://github.com/deltachat/deltachat-desktop" class="source-link">Source Code</a>
+                <div class="title">Windows</div>
+                <div class="buttons">
+                    <a href="">Setup (.exe)</a>
+                    <a href="">Portable (.exe)</a>
+                    <a href="" class="soon"><small>Download from</small> Microsoft Store</a>
+                </div>
+                <p>Please note that the Portable version still stores the user data in the users directory</p>
+            </div>
+            <div class="box" id="osx">
+                <a href="https://github.com/deltachat/deltachat-desktop" class="source-link">Source Code</a>
+                <div class="title">Mac OSX (apple)</div>
+                <div class="buttons">
+                    <a href="">DMG</a>
+                    <a href="" class="soon"><small>Download on the</small> AppStore</a>
+                </div>
+            </div>
+            <div class="box" id="ios">
+                <a href="https://github.com/deltachat/deltachat-ios" class="source-link">Source Code</a>
+                <div class="title">iOS (apple iPhone)</div>
+                <div class="buttons">
+                    <a href=""><small>Beta on</small> Testflight</a>
+                    <a href="" class="soon"><small>Download on the</small> AppStore</a>
+                </div>
+            </div>
+            <div class="box" id="android">
+                <a href="https://github.com/deltachat/deltachat-android" class="source-link">Source Code</a>
+                <div class="title">Android</div>
+                <div class="buttons">
+                    <a href="">APK</a>
+                    <a href="">F-Droid</a>
+                    <a href="">Google Play</a>
+                    <a href="" class="soon">Amazon Appstore</a>
+                </div>
+            </div>
+        </div>
+    </content>
+</body>
+
+</html>
