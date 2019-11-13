@@ -4,25 +4,35 @@ const fs = require('fs-extra')
 const { join } = require('path')
 
 async function uglify(code) {
-    const res = UglifyJS.minify(code)
+    var res = UglifyJS.minify(code)
     if (res.error) throw res.error
     else return res.code
+}
+
+function compressCSS(css){
+    return csso.minify(css, {
+        restructure: true
+    }).css;
+}
+
+function read(filepath){
+    return fs.readFile(join(__dirname, 'src', filepath), 'utf-8')
 }
 
 async function main() {
     await fs.ensureDir(join(__dirname, 'dist'))
 
-    let indexHTML = await fs.readFile(join(__dirname, 'src', 'index.html'), 'utf-8')
+    var indexHTML = await read('index.html')
 
-    const logicJS = await fs.readFile(join(__dirname, 'src', 'logic.js'), 'utf-8')
-    const styleCSS = await fs.readFile(join(__dirname, 'src', 'style.css'), 'utf-8')
-
-    const compressedCSS = csso.minify(styleCSS, {
-        restructure: true
-    }).css;
+    var logicJS = await read('logic.js')
 
     indexHTML = indexHTML
-        .replace('<link rel="stylesheet" href="style.css">', `<style>${compressedCSS}</style>`)
+    .replace('<link rel="stylesheet" href="normalize.css">', `<style>${
+        compressCSS(await read('normalize.css'))
+    }</style>`)
+        .replace('<link rel="stylesheet" href="style.css">', `<style>${
+            compressCSS(await read('style.css'))
+        }</style>`)
         .replace('<script src="logic.js"></script>', `<script>${await uglify(logicJS)}</script>`)
 
     await fs.writeFile(join(__dirname, 'dist', 'index.html'),indexHTML)
