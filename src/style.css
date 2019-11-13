@@ -41,6 +41,9 @@ body {
     padding: 0 4pt;
 }
 
+#recommend > .box {
+    border: 4px solid var(--border-color);
+}
 
 .box {
     border: 2px solid var(--border-color);
