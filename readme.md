@@ -1,12 +1,12 @@
 # MOVED to deltachat-pages
 
-# get.delta.chat
+~~# get.delta.chat
 Our Download Landing Page.
-https://get.delta.chat
+https://get.delta.chat~~
 
-## How to use
+~~## How to use~~
 
-You can eiher use the content of the `src` folder **as is**, or you can generate a minified version:
+~~You can eiher use the content of the `src` folder **as is**, or you can generate a minified version:~~
 
 ```
 node compress
