@@ -25,3 +25,5 @@ function userAgentToOS() {
     else if (uA.includes('Macintosh') || uA.includes('Mac OS X'))
         return 'osx'
 }
+
+main()
