@@ -55,10 +55,11 @@ body {
     float: right;
     text-decoration: none;
     padding: 2pt 2pt 2pt 3pt;
-    border-radius: 0 0 0 10px;
+    border-radius: 0 2px 0 10px;
     border: 2px solid var(--border-color);
-    border-top: none;
-    border-right: none;
+    right: -2px;
+    top: -2px;
+    position: relative;
 }
 
 .box>.source-link:hover {
