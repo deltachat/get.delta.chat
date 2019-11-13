@@ -1,3 +1,5 @@
+# MOVED to deltachat-pages
+
 # get.delta.chat
 Our Download Landing Page.
 https://get.delta.chat
